@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    min-height: 100vh !important;
+    background-color: violet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+}
+
+.home {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100%;
+    background: rgba(41, 39, 39, 0.25);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    overflow: visible;
+}
+
+h1 {
+    width: inherit;
+    text-align: center;
+    font-weight: 900;
+    color: black;
+    width: 100%;
+}
+
+h2 {
+    padding-top: 50px;
+    width: inherit;
+    text-align: center;
+    color: black;
+}
+#answerbtn {
+    padding-top: 50px;
+ display: flex;
+ width: 100%;
+ max-width: 100%;
+ gap: 20px;
+ flex-direction: column;
+}
+
+button {
+    all: unset;
+    height: 50px;
+    width: 100%;
+    padding: 5px;
+    background-color: violet;
+    color: black;
+    font-weight: 900;
+    border-radius: 10px;
+    text-align: left;
+    transition: all .2s ease-in-out;
+    overflow: visible;
+}
+
+button:hover:not([disabled]) {
+    transform: scale(0.95);
+    overflow: visible;
+}
+
+.quiz {
+    flex-direction: column;
+    display: flex;
+    gap: 50px;
+    text-align: center;
+}
+
+#nextbtn {
+    text-align: center;
+    margin-top: 50px;
+    display: none;
+}
+
+.correct {
+    background-color: green;
+    color: white;
+}
+
+.incorrect{
+    background-color: red;
+    color: white;
+}
+
+.show {
+    height: 200px;
+    width: inherit;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.showcon {
+    display: none;
+}
+
+.showme {
+    display: block;
+}
+
+.show button {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.scores {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 390px) {
+    .home {
+        height: auto;
+    }
+    button {
+        height: auto;
+    }
+}
